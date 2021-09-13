@@ -21,6 +21,8 @@ class ImagenDroneController extends Controller
 
     public function create(Request $request){
         //1. Sacar y guardar imagen en el server
+        
+
 
         //2. Crear y guargar registro en la DB 
         $nombreImagen = $request->input('nombreImage');
