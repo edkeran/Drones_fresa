@@ -9,238 +9,452 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <LINK REL=StyleSheet HREF="css1.css" TYPE="text/css" MEDIA=screen>
         <!-- Styles -->
         <style>
           @import url(https://fonts.googleapis.com/css?family=Montserrat);
       
           html, body, .container {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  overflow: hidden;
-  
-}
+          width: 100%;
+          height: 100%;
+          margin: 0px;
+          overflow: hidden;
+          
+          }
 
-.container {
-  /padding:150px;/
-  background: #2F2F31;
-  
-}
-
-#navMenu {
-  top: 150px;
-  left: 100px;
-  width: 140px;
-  height: 140px;
-  z-index: 100;
-  background: linear-gradient(90deg,  #2db628, #008000,  #2db628);
-  -webkit-background: linear-gradient(90deg,  #2db628, #008000,  #2db628);
-  background-size: 400% 400%;
-  -webkit-background-size: 400% 400%;
-  animation: gradient 5s infinite;
-  -webkit-animation: gradient 5s infinite;
-  
-}
-
-#navMenu:hover, .nav:hover {
-  background: #33FF33;
-}
-
-@keyframes gradient {
-  50% {
-    background-position: 100% 0;
-  }
-}
-@-webkit-keyframes gradient {
-  50% {
-    background-position: 100% 0;
-  }
-}
-
-.diamond {
-  position: absolute;
-  width: 67.5px;
-  height: 67.5px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  background: #2db628;
-  margin: 10px;
-  cursor: pointer;
-  box-shadow: 1px 4px 10px #2db628;
-  
-  
-}
-
-.diamond:active {
-  background: #2db628;
-  box-shadow: 0px 1px 2.5px  #2db628;
-  transition: 0.1s;
-  -webkit-transition: 0.1s;
-}
-
-.#nav1:hover + .popUp{
-  width:100px;
-}
-
-.nav {
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-}
-
-.nav1 {
-  top: 87px;
-  left: 187px;
-  
-}
-
-.nav2 {
-  top: 137px;
-  left: 237px;
-}
-
-.nav3 {
-  top: 186px;
-  left: 287px;
-}
-
-.nav4 {
-  top: 236px;
-  left: 237px;
-}
-
-.nav5 {
-  top: 286px;
-  left: 187px;
-}
-
-.small {
-  top: 186px;
-  left: 236px;
-  z-index: 10;
-  background: #643fc1;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-}
-
-.rotCorrect {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  margin-left: 14px;
-  margin-top: 8px;
-}
-
-#mainRotCorrect {
-  margin-left: 26px;
-  margin-top: 28px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  max-width: 90px;
-}
-
-i {
-  color: #EEEEEE;
-}
-
-
-svg {
-    display: block;
-    font: 20em 'Montserrat';
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-}
-
-.text-copy {
-    fill: none;
-    stroke: rgb(9, 245, 40);
-    stroke-dasharray: 6% 29%;
-    stroke-width: 15px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.5s infinite linear;
-}
-
-.text-copy:nth-child(1){
-	stroke: #2db628;
-	animation-delay: -1;
-}
-
-.text-copy:nth-child(2){
-	stroke: #0a0a0a;
-	animation-delay: -2s;
-}
-
-.text-copy:nth-child(3){
-	stroke: #0f6e2f;
-	animation-delay: -3s;
-}
-
-.text-copy:nth-child(4){
-	stroke: #5af588;
-	animation-delay: -4s;
-}
-
-.text-copy:nth-child(5){
-	stroke: #0f0f0e;
-	animation-delay: -5s;
-    
-}
-
-@keyframes stroke-offset{
-	100% {stroke-dashoffset: -35%;}
-}
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-           
-
-            .contentTitgulo {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 16px;
-            }
-
+          .container {
+            /padding:150px;/
+            background: #2F2F31;
             
+          }
 
-            .m-b-md {
-              
-                margin-bottom: 10px;
+          #navMenu {
+            top: 150px;
+            left: 100px;
+            width: 140px;
+            height: 140px;
+            z-index: 100;
+            background: linear-gradient(90deg,  #2db628, #008000,  #2db628);
+            -webkit-background: linear-gradient(90deg,  #2db628, #008000,  #2db628);
+            background-size: 400% 400%;
+            -webkit-background-size: 400% 400%;
+            animation: gradient 5s infinite;
+            -webkit-animation: gradient 5s infinite;
+            
+          }
+
+          #navMenu:hover, .nav:hover {
+            background: #33FF33;
+          }
+
+          @keyframes gradient {
+            50% {
+              background-position: 100% 0;
             }
-            p {
-  font-size: 100%;
-  font-weight: bold;
-  letter-spacing: 10px;
-  text-align: center;
-  text-shadow: gray 6px 0;
-  text-transform: uppercase;
-  
-}
-b {
-  font-size: 70%;
-  font-weight: bold;
-  letter-spacing: 0px;
-  text-align: center;
-  text-shadow: gray 6px 0;
-  text-transform: uppercase;
-  
-}
+          }
+          @-webkit-keyframes gradient {
+            50% {
+              background-position: 100% 0;
+            }
+          }
+
+          .diamond {
+            position: absolute;
+            width: 67.5px;
+            height: 67.5px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            background: #2db628;          .container {
+            /padding:150px;/
+            background: #2F2F31;
+            
+          }
+
+          #navMenu {
+            top: 150px;
+            left: 100px;
+            width: 140px;
+            height: 140px;
+            z-index: 100;
+            background: linear-gradient(90deg,  #2db628, #008000,  #2db628);
+            -webkit-background: linear-gradient(90deg,  #2db628, #008000,  #2db628);
+            background-size: 400% 400%;
+            -webkit-background-size: 400% 400%;
+            animation: gradient 5s infinite;
+            -webkit-animation: gradient 5s infinite;
+            
+          }
+
+          #navMenu:hover, .nav:hover {
+            background: #33FF33;
+          }
+
+          @keyframes gradient {
+            50% {
+              background-position: 100% 0;
+            }
+          }
+          @-webkit-keyframes gradient {
+            50% {
+              background-position: 100% 0;
+            }
+          }
+
+          .diamond {
+            position: absolute;
+            width: 67.5px;
+            height: 67.5px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            background: #2db628;
+            margin: 10px;
+            cursor: pointer;
+            box-shadow: 1px 4px 10px #2db628;
+            
+            
+          }
+
+          .diamond:active {
+            background: #2db628;
+            box-shadow: 0px 1px 2.5px  #2db628;
+            transition: 0.1s;
+            -webkit-transition: 0.1s;
+          }
+
+          .#nav1:hover + .popUp{
+            width:100px;
+          }
+
+          .nav {
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+          }
+
+          .nav1 {
+            top: 87px;
+            left: 187px;
+            
+          }
+
+          .nav2 {
+            top: 137px;
+            left: 237px;
+          }
+
+          .nav3 {
+            top: 186px;
+            left: 287px;
+          }
+
+          .nav4 {
+            top: 236px;
+            left: 237px;
+          }
+
+          .nav5 {
+            top: 286px;
+            left: 187px;
+          }
+
+          .small {
+            top: 186px;
+            left: 236px;
+            z-index: 10;
+            background: #643fc1;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+          }
+
+          .rotCorrect {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            margin-left: 14px;
+            margin-top: 8px;
+          }
+
+          #mainRotCorrect {
+            margin-left: 26px;
+            margin-top: 28px;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            max-width: 90px;
+          }
+
+          i {
+            color: #EEEEEE;
+          }
+
+
+          svg {
+              display: block;
+              font: 20em 'Montserrat';
+              width: 200px;
+              height: 200px;
+              margin: 0 auto;
+          }
+
+          .text-copy {
+              fill: none;
+              stroke: rgb(9, 245, 40);
+              stroke-dasharray: 6% 29%;
+              stroke-width: 15px;
+              stroke-dashoffset: 0%;
+              animation: stroke-offset 5.5s infinite linear;
+          }
+
+          .text-copy:nth-child(1){
+            stroke: #2db628;
+            animation-delay: -1;
+          }
+
+          .text-copy:nth-child(2){
+            stroke: #0a0a0a;
+            animation-delay: -2s;
+          }
+
+          .text-copy:nth-child(3){
+            stroke: #0f6e2f;
+            animation-delay: -3s;
+          }
+
+          .text-copy:nth-child(4){
+            stroke: #5af588;
+            animation-delay: -4s;
+          }
+
+          .text-copy:nth-child(5){
+            stroke: #0f0f0e;
+            animation-delay: -5s;
+              
+          }
+
+          @keyframes stroke-offset{
+            100% {stroke-dashoffset: -35%;}
+          }
+
+                      .full-height {
+                          height: 100vh;
+                      }
+
+                      .flex-center {
+                          align-items: center;
+                          display: flex;
+                          justify-content: center;
+                      }
+
+                      .position-ref {
+                          position: relative;
+                      }
+
+                    
+
+                      .contentTitgulo {
+                          text-align: center;
+                      }
+
+                      .title {
+                          font-size: 16px;
+                      }
+
+                      
+
+                      .m-b-md {
+                        
+                          margin-bottom: 10px;
+                      }
+                      p {
+            font-size: 100%;
+            font-weight: bold;
+            letter-spacing: 10px;
+            text-align: center;
+            text-shadow: gray 6px 0;
+            text-transform: uppercase;
+            
+          }
+          b {
+            font-size: 70%;
+            font-weight: bold;
+            letter-spacing: 0px;
+            text-align: center;
+            text-shadow: gray 6px 0;
+            text-transform: uppercase;
+            
+          }
+            margin: 10px;
+            cursor: pointer;
+            box-shadow: 1px 4px 10px #2db628;
+            
+            
+          }
+
+          .diamond:active {
+            background: #2db628;
+            box-shadow: 0px 1px 2.5px  #2db628;
+            transition: 0.1s;
+            -webkit-transition: 0.1s;
+          }
+
+          .#nav1:hover + .popUp{
+            width:100px;
+          }
+
+          .nav {
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+          }
+
+          .nav1 {
+            top: 87px;
+            left: 187px;
+            
+          }
+
+          .nav2 {
+            top: 137px;
+            left: 237px;
+          }
+
+          .nav3 {
+            top: 186px;
+            left: 287px;
+          }
+
+          .nav4 {
+            top: 236px;
+            left: 237px;
+          }
+
+          .nav5 {
+            top: 286px;
+            left: 187px;
+          }
+
+          .small {
+            top: 186px;
+            left: 236px;
+            z-index: 10;
+            background: #643fc1;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+          }
+
+          .rotCorrect {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            margin-left: 14px;
+            margin-top: 8px;
+          }
+
+          #mainRotCorrect {
+            margin-left: 26px;
+            margin-top: 28px;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            max-width: 90px;
+          }
+
+          i {
+            color: #EEEEEE;
+          }
+
+
+          svg {
+              display: block;
+              font: 20em 'Montserrat';
+              width: 200px;
+              height: 200px;
+              margin: 0 auto;
+          }
+
+          .text-copy {
+              fill: none;
+              stroke: rgb(9, 245, 40);
+              stroke-dasharray: 6% 29%;
+              stroke-width: 15px;
+              stroke-dashoffset: 0%;
+              animation: stroke-offset 5.5s infinite linear;
+          }
+
+          .text-copy:nth-child(1){
+            stroke: #2db628;
+            animation-delay: -1;
+          }
+
+          .text-copy:nth-child(2){
+            stroke: #0a0a0a;
+            animation-delay: -2s;
+          }
+
+          .text-copy:nth-child(3){
+            stroke: #0f6e2f;
+            animation-delay: -3s;
+          }
+
+          .text-copy:nth-child(4){
+            stroke: #5af588;
+            animation-delay: -4s;
+          }
+
+          .text-copy:nth-child(5){
+            stroke: #0f0f0e;
+            animation-delay: -5s;
+              
+          }
+
+          @keyframes stroke-offset{
+            100% {stroke-dashoffset: -35%;}
+          }
+
+                      .full-height {
+                          height: 100vh;
+                      }
+
+                      .flex-center {
+                          align-items: center;
+                          display: flex;
+                          justify-content: center;
+                      }
+
+                      .position-ref {
+                          position: relative;
+                      }
+
+                    
+
+                      .contentTitgulo {
+                          text-align: center;
+                      }
+
+                      .title {
+                          font-size: 16px;
+                      }
+
+                      
+
+                      .m-b-md {
+                        
+                          margin-bottom: 10px;
+                      }
+                      p {
+            font-size: 100%;
+            font-weight: bold;
+            letter-spacing: 10px;
+            text-align: center;
+            text-shadow: gray 6px 0;
+            text-transform: uppercase;
+            
+          }
+          b {
+            font-size: 70%;
+            font-weight: bold;
+            letter-spacing: 0px;
+            text-align: center;
+            text-shadow: gray 6px 0;
+            text-transform: uppercase;
+            
+          }
         </style>
-        
-        
     </head>
     <body>
      
@@ -289,8 +503,11 @@ b {
     </div>
   </div>  
 
-     <div>
-           @yield('content')
-           </div>    
-    </body>
+      <div>
+        @yield('content')
+      </div>    
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+    
 </html>

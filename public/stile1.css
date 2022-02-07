@@ -79,3 +79,13 @@ body {
 .sidebar-navigation ul li.active i {
     color: #98D7EC;
 }
+
+.centeredCard{
+    padding: 40px;
+    width: 80%;
+    margin: 2% auto;
+}
+
+.customUlMenu{
+    padding: 0;
+}
