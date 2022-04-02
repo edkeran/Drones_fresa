@@ -7,11 +7,11 @@
             "previewLimit": 50,
             "server": "localhost",
             "port": 3306,
-            "askForPassword": true,
             "driver": "MySQL",
-            "name": "dfdafdf",
+            "name": "drone_fresas",
+            "username": "dev",
             "database": "drone_fresas",
-            "username": "root"
+            "password": "Dev12*P0"
         }
     ]
 }
