@@ -18,4 +18,6 @@ class ImagenesCapturas extends Model
     protected $fillable = [
         'nombre_imagen', 'ruta_imagen', 'nombre_server_imagen','extension'
     ];
+    
+
 }

@@ -1,29 +1,28 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Models\ImagenesCapturas;
 
+
 class ImagenDroneController extends Controller
 {
-    //
-    public function findAll(){
-        $lstImagenes = ImagenesCapturas::all();
-        if(count($lstImagenes) > 0){
-            foreach($lstImagenes as $imageItem){
-                dd($imageItem);
-            }
-        }else{
-            dd("No Hay Nada Aun");
-        }
-    }
+ Public function findAll(){
+     $lstImagenes = ImagenesCapturas::all();
+     if(count($lstImagenes)>0){
+         foreach($lstImagenes as $imagenItem){
+            dd($imagenItem);
+         }
 
-    public function create(Request $request){
+     }else{
+         dd("no hay imagen");
+     }
+ }
+
+ public function create(Request $request){
+
+    
         //1. Sacar y guardar imagen en el server
         
-
-
         //2. Crear y guargar registro en la DB 
         $nombreImagen = $request->input('nombreImage');
         $imageCapturObj = new ImagenesCapturas();
@@ -46,3 +45,6 @@ class ImagenDroneController extends Controller
 
 
 }
+
+ 
+
