@@ -10,4 +10,14 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+
+public function store(Request $request)
+{
+if($request->hastfile('image')){
+    $path=$request->image->store('public');
+    Image::create(['path'=>$path]);
+}
+
+}
 }
