@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ImagenDroneController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('home');
 });
@@ -22,3 +22,7 @@ Route::view('login', 'login')->name('login');
 Route::view('plataform', 'plataform')->name('plataform');
 Route::view('upimage', 'upimage')->name('upimage');
 Route::post('/subir','Controller@subirArchivo')->name('subir');
+Route::view('perfil', 'perfil')->name('perfil');
+Route::post('/fileUpload', [ImagenDroneController::class, 'create']);
+Route::view('register', 'register')->name('register');
+Route::view('eventos', 'eventos')->name('eventos');

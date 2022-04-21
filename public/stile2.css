@@ -1,0 +1,46 @@
+#muestra {
+    position: relative; 
+    margin: 3rem auto; 
+    width: 690px; height: 400px; 
+    overflow: hidden; 
+    
+    
+    }
+    #selectores {
+    position: absolute; 
+    left: 0; top: 0; 
+    width: 100px; height: 390px; 
+    padding: 2px; 
+    font-size: 0; 
+    overflow: scroll; 
+    background-color: #53e053; 
+    }
+    #selectores img{
+    margin: none; 
+    border: solid 3px transparent; 
+    cursor: pointer; 
+    }
+    #visor {
+    position: absolute; 
+    font-size: 0; 
+    left: 100px; top: 0; 
+    width: 590px; height: 430px; 
+   
+    }
+    #visor:before {
+    content: 'Muestra Fotografica de los eventos';
+    position: absolute;
+    left: 0; right: 0; top: 48%;
+    font-size: 1.7rem;
+    color: #020202;
+    text-align: center;
+    }
+    #visor img {
+        
+    position: absolute; 
+    top: 0; left: 0; 
+    }
+    p {
+    font-weight: bold; 
+    }
+    

@@ -1,8 +1,7 @@
 @extends('plataform')
 @section('pageCurrent')
-
-    <div>
-        <form enctype="multipart/form-data" id="frmUploadImages" action="/fileUpload" method="post" >
+<div>
+        <form enctype="multipart/form-data" id="frmUploadImages" action="/upimage" method="post" >
             <input type="text" name="nombreImage">
             <br>
             <input type="file">
@@ -10,6 +9,7 @@
             <br>
             <input type="submit" value="Enviar" >
         </form>
+       
     </div>
     
 @endsection
