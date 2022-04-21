@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>Evaluación de JavaScript</title>
+</head>
+<body>
+<?php 
+echo "hola mundo";
+Respuesta
+
+
+</body>
+</html>
