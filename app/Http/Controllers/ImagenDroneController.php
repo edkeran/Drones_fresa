@@ -7,7 +7,7 @@ use App\Models\ImagenesCapturas;
 
 class ImagenDroneController extends Controller
 {
-    //
+    
     public function findAll(){
         $lstImagenes = ImagenesCapturas::all();
         if(count($lstImagenes) > 0){
@@ -23,7 +23,7 @@ class ImagenDroneController extends Controller
         //1. Sacar y guardar imagen en el server
         
 
-
+        
         //2. Crear y guargar registro en la DB 
         $nombreImagen = $request->input('nombreImage');
         $imageCapturObj = new ImagenesCapturas();

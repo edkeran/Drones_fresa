@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ImagenDroneController;
+use App\Http\Controllers\UsuarioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,8 +22,8 @@ Route::view('mision', 'mision')->name('mision');
 Route::view('login', 'login')->name('login');
 Route::view('plataform', 'plataform')->name('plataform');
 Route::view('upimage', 'upimage')->name('upimage');
-Route::post('/subir','Controller@subirArchivo')->name('subir');
 Route::view('perfil', 'perfil')->name('perfil');
 Route::post('/fileUpload', [ImagenDroneController::class, 'create']);
 Route::view('register', 'register')->name('register');
 Route::view('eventos', 'eventos')->name('eventos');
+Route::post('/registrarUsuario', [UsuarioController::class, 'crearUsuario']);
