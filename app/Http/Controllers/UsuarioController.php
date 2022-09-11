@@ -18,7 +18,7 @@ class UsuarioController extends Controller
         $address = $request->input('direccion');
         $phone = $request->input('telefono');
         if($this->checkPassword($password,$verifyPassword) == true){
-            $usuario = new User();
+            $usuario = new User();//POO -> Programacion Orientada A Objetos 
             $rolConsulta = Role::where('code_itrn', 'CONSUL')->get()->first();
             $usuario->fill([
                 'name' => $name,
@@ -32,7 +32,7 @@ class UsuarioController extends Controller
             $usuario->roles()->attach($rolConsulta);
             return dd($request,"Usuario Creado Satisfactoriamente");
         }
-        return dd($request,"Algo paso");
+        return dd($request,"Las contraseñas");
     }
 
     private function checkPassword($pass,$verifyPass){
