@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Role;
 use App\Models\User;
+use Doctrine\DBAL\Schema\View;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class UsuarioController extends Controller
 {    
@@ -20,6 +23,7 @@ class UsuarioController extends Controller
         if($this->checkPassword($password,$verifyPassword) == true){
             $usuario = new User();//POO -> Programacion Orientada A Objetos 
             $rolConsulta = Role::where('code_itrn', 'CONSUL')->get()->first();
+            $password = Hash::make($password);
             $usuario->fill([
                 'name' => $name,
                 'email' => $email,
@@ -38,5 +42,17 @@ class UsuarioController extends Controller
     private function checkPassword($pass,$verifyPass){
         return $pass == $verifyPass;
     }
-   
+
+    public function loginUsuario(Request $request){
+        $credentials = $request->validate([
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+        ]);
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect("analisisConsultor");
+        }
+    }
+
 }

@@ -5,12 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <title>Horus</title>
-
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="/css/layoutStyleMain.css">
     <!-- Styles -->
     <style>
         @import url(https://fonts.googleapis.com/css?family=Montserrat);
@@ -338,7 +337,6 @@
 
                 <svg viewBox="0 -100 1000 400">
                     <symbol id="s-text">
-
                         <text text-anchor="middle" x="50%" y="100%">Horus</text>
                     </symbol>
 

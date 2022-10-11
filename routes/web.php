@@ -27,3 +27,5 @@ Route::post('/fileUpload', [ImagenDroneController::class, 'create']);
 Route::view('register', 'register')->name('register');
 Route::view('eventos', 'eventos')->name('eventos');
 Route::post('/registrarUsuario', [UsuarioController::class, 'crearUsuario']);
+Route::post('/ingresarUsuario', [UsuarioController::class,'loginUsuario']);
+Route::view('/analisisConsultor', 'lstAnalisisCampesino')->middleware('auth'); 
