@@ -11,6 +11,14 @@ label{
     border-radius: 50px;
     padding: 5%;
 }
+
+.labelInitPage{
+    font-family: Raleway;
+    color: black;
+    font-weight: 600;
+    margin-top: 12%;
+}
+
 input{
     border-radius: 10px!important;
     font-family: Raleway;
@@ -28,3 +36,42 @@ input{
     background-color: #368006;
 }
 
+.videos-showcase{
+    display: inline-flex;
+    text-align: center;
+}
+
+
+.footer-main-layout{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #368006;
+    color: white;
+    font-family: Raleway;
+    text-align: center;
+    padding: 37px 0;
+}
+
+.page-container{
+    position: relative;
+    min-height: 100vh;
+}
+
+body{
+    margin: 0;
+}
+
+.mision-text{
+    font-size: 18px;
+    font-family: Raleway;
+    text-shadow: none;
+    text-transform: none;
+    margin-top: 12%;
+}
+
+.mision-container{
+    background-color: rgba(102, 255, 153, 0.5);
+    border-radius: 50px;
+}

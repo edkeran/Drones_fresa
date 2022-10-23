@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <title>Horus</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -13,6 +13,7 @@
     <!-- Styles -->
     <style>
         @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
         a {
             text-decoration: none;
         }
@@ -32,7 +33,6 @@
         }
 
         .container {
-
             position: fixed;
             top: 0px;
             width: 100%;
@@ -41,8 +41,6 @@
             margin: 0px;
             background-color: white;
             z-index: 2;
-            cursor: text;
-
         }
 
         .container {
@@ -325,74 +323,80 @@
             left: 600px;
 
         }
-
     </style>
-    
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="contentTitgulo">
-            <div class="title m-b-md">
+    <div class="page-container">
+        <div class="container">
+            <div class="contentTitgulo">
+                <div class="title m-b-md">
 
-                <svg viewBox="0 -100 1000 400">
-                    <symbol id="s-text">
-                        <text text-anchor="middle" x="50%" y="100%">Horus</text>
-                    </symbol>
+                    <svg viewBox="0 -100 1000 400">
+                        <symbol id="s-text">
+                            <text text-anchor="middle" x="50%" y="100%">Horus</text>
+                        </symbol>
 
-                    <g class="g-ants">
-                        <use xlink:href="#s-text" class="text-copy"></use>
-                        <use xlink:href="#s-text" class="text-copy"></use>
-                        <use xlink:href="#s-text" class="text-copy"></use>
-                        <use xlink:href="#s-text" class="text-copy"></use>
-                        <use xlink:href="#s-text" class="text-copy"></use>
-                    </g>
-                </svg>
+                        <g class="g-ants">
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                        </g>
+                    </svg>
 
-            </div>
-
-            <div id="navMenu" class="diamond">
-                <div id="mainRotCorrect" class="rotCorrect"><i class="fa fa-cubes fa-4x" aria-hidden="true"></i>
                 </div>
 
-                <a class="x" href="{{ route('home') }}" style="color:#000000 ">
-                    <div class="text">Home</div>
-                </a>
-            </div>
+                <div id="navMenu" class="diamond">
+                    <div id="mainRotCorrect" class="rotCorrect"><i class="fa fa-cubes fa-4x" aria-hidden="true"></i>
+                    </div>
 
-            <div id="nav1" class="nav nav1 diamond">
-                <div class="rotCorrect"><i class="fa fa-home fa-2x" aria-hidden="true"></i></div>
-                <a href="{{ route('login') }}" style="color:#000000 ">Ingresar</a>
-            </div>
+                    <a class="x" href="{{ route('home') }}" style="color:#000000 ">
+                        <div class="text">Home</div>
+                    </a>
+                </div>
 
-            <div id="nav2" class="nav nav2 diamond">
-                <div class="rotCorrect"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></div>
-                <a href="{{ route('mision') }}" style="color:#000000 ">Mision</a>
+                <div id="nav1" class="nav nav1 diamond">
+                    <div class="rotCorrect"><i class="fa fa-home fa-2x" aria-hidden="true"></i></div>
+                    <a href="{{ route('login') }}" style="color:#000000 ">Ingresar</a>
+                </div>
+
+                <div id="nav2" class="nav nav2 diamond">
+                    <div class="rotCorrect"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></div>
+                    <a href="{{ route('mision') }}" style="color:#000000 ">Misión</a>
+                </div>
+                <div id="nav3" class="nav nav3 diamond">
+                    <div class="rotCorrect"><i class="fa fa-calendar fa-2x" aria-hidden="true"></i></div>
+                    <a href="{{ route('perfil') }}" style="color:#000000 ">plataforma</a>
+                </div>
+                <div id="nav4" class="nav nav4 diamond">
+                    <div class="rotCorrect"><i class="fa fa-calendar fa-2x" aria-hidden="true"></i></div>
+                    <a href="{{ route('register') }}" style="color:#000000 ">registarse</a>
+                </div>
+                <div id="nav5" class="nav nav5 diamond">
+                    <div class="rotCorrect"><i class="fa fa-cogs fa-2x" aria-hidden="true"></i></div>
+                    <a href="{{ route('eventos') }}" style="color:#000000 ">Eventos</a>
+                </div>
+                <div id="nav5" class="nav nav6 diamond">
+                    <div class="rotCorrect"><i class="fa fa-cogs fa-2x" aria-hidden="true"></i></div>
+                </div>
             </div>
-            <div id="nav3" class="nav nav3 diamond">
-                <div class="rotCorrect"><i class="fa fa-calendar fa-2x" aria-hidden="true"></i></div>
-                <a href="{{ route('perfil') }}" style="color:#000000 ">plataforma</a>
+            <div class="conte">
+                @yield('content')
             </div>
-            <div id="nav4" class="nav nav4 diamond">
-                <div class="rotCorrect"><i class="fa fa-calendar fa-2x" aria-hidden="true"></i></div>
-                <a href="{{ route('register') }}" style="color:#000000 ">registarse</a>
             </div>
-            <div id="nav5" class="nav nav5 diamond">
-                <div class="rotCorrect"><i class="fa fa-cogs fa-2x" aria-hidden="true"></i></div>
-                <a href="{{ route('eventos') }}" style="color:#000000 ">Eventos</a>
-            </div>
-            <div id="nav5" class="nav nav6 diamond">
-                <div class="rotCorrect"><i class="fa fa-cogs fa-2x" aria-hidden="true"></i></div>
+            <footer class="footer-main-layout">
+                <label>Gestion analisis de imagenes capturadas con Drone.</label>
+                <br>
+                Todos los derechos reservados &copy;{{ now()->year }}
+            </footer>
             </div>
         </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      <div class="conte">
-          @yield('content')
-      </div>
     </div>
-  </body>
+
+
+</body>
+
 </html>
