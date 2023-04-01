@@ -6,5 +6,5 @@ class Constants
 {
     const ADMIN = 'ADMIN';
     const ANALISTA = 'ANALISTA';
-    const USUARIO = 'user';
+    const USUARIO = 'USER';
 }

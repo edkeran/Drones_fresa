@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Constants\Constants;
 use App\Models\Role;
 use App\Models\User;
 use Doctrine\DBAL\Schema\View;
@@ -22,7 +23,7 @@ class UsuarioController extends Controller
         $phone = $request->input('telefono');
         if($this->checkPassword($password,$verifyPassword) == true){
             $usuario = new User();//POO -> Programacion Orientada A Objetos 
-            $rolConsulta = Role::where('code_itrn', 'CONSUL')->get()->first();
+            $rolUsuario = Role::where('code_itrn', Constants::USUARIO)->get()->first();
             $password = Hash::make($password);
             $usuario->fill([
                 'name' => $name,
@@ -33,7 +34,7 @@ class UsuarioController extends Controller
                 'address' => $address
             ]);
             $usuario->save();
-            $usuario->roles()->attach($rolConsulta);
+            $usuario->roles()->attach($rolUsuario);
             return dd($request,"Usuario Creado Satisfactoriamente");
         }
         return dd($request,"Las contraseñas");
