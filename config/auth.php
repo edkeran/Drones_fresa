@@ -69,6 +69,7 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+            'email_verification' => true
         ],
 
         // 'users' => [

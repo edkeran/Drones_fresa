@@ -41,11 +41,10 @@
             margin: 0px;
             background-color: white;
             z-index: 2;
-        }
-
-        .container {
-            /padding: 1px;/ background: #2F2F31;
-
+            padding: 1px;
+            background: #3d3dc1;
+            text-align: center;
+            width: -webkit-fill-available;
         }
 
         #navMenu {
@@ -111,11 +110,6 @@
             box-shadow: 10px 1px 2.5px #2db628;
             transition: 0.1s;
             -webkit-transition: 0.1s;
-
-        }
-
-        .#nav1:hover+.popUp {
-            width: 100px;
 
         }
 
@@ -315,7 +309,7 @@
         }
 
         div#tex {
-            text align: start;
+            text-align: start;
             width: 500px;
             height: 100px;
             position: relative;
