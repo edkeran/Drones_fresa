@@ -12,14 +12,15 @@ body {
 }
 
 .sidebar-navigation {
-    display: inline-block;
+    
     min-height: 100vh;
-    width: 80px;
+    width: 150px;
     background-color: #313443;
     float: left;
 }
 
 .sidebar-navigation ul {
+
     text-align: center;
     color: white;
 }
