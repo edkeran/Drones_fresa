@@ -17,6 +17,8 @@
                 <br>
                 <input id="password" required="true" class="form-control" type="password" name="password" placeholder="password" type="password" />
                 <input type="button" name="Siguiente" class="next action-button" value="Siguiente"/>
+                <a href="{{ route('home') }}"><input type="button" name="Salir" class="exit action-button"  value="Salir"/>
+</a>
             </fieldset>
             <fieldset>
                 <h2 class="fs-title">Confirmar contraseña</h2>

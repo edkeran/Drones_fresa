@@ -1,5 +1,6 @@
 @extends('plataform')
 @section('pageCurrent')
+
 <h2>Cargar Imagenes A Procesar</h2>
 <div class="card" style="width: 80%">
     <form enctype="multipart/form-data" id="frmUploadImages" action="/fileUpload" method="post" >
@@ -9,7 +10,7 @@
         <input style="margin: 10px" type="file" multiple="true" onchange="showPreviewImage(this)" class="btn btn-secondary" name="imageFileStore[]">
         @csrf
         <br><br>
-        <input style="margin: 10px" type="submit" value="Enviar" class="btn btn-primary" >
+        <input style="margin: 10px"  type="submit" value="Enviar">
     </form>
 </div>
 <div id="previewImagesDiv"></div>
