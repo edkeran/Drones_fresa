@@ -11,13 +11,13 @@
 
   --font-color: #1c1c1c;
 
-  --bg-color: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  --bg-color: linear-gradient(120deg, #a8f1cd 0%, #d3fca5 100%);
   --bg-card: #ecf4ff;
   --bg-projetc: rgba(192, 192, 192, 0.6);
 
   --grey: #44475a;
   --orange: #ffb86c;
-  --purple: #bd93f9;
+  --purple: #5b9459;
 }
 
 /*===== Body =====*/

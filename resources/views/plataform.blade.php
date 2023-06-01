@@ -29,7 +29,7 @@
             </li>
             <li>
                 <i class="fa fa-window-close"></i>
-                <span class="tooltip">Close</span>
+                <span class="tooltip">salir</span>
                 <b><br><a href="{{route('home')}}" style="color:#FFFFFF ">salir</a></br></b>
                 
             </li>

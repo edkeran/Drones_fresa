@@ -39,7 +39,7 @@ body {
 
 .sidebar-navigation ul li .tooltip {
     display: inline-block;
-    position: absolute;
+    position: relative;
     background-color: #313443;
     padding: 8px 15px;
     border-radius: 3px;

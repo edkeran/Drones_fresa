@@ -56,12 +56,12 @@
         <h4>Projetos</h4>
         <p class="line-1 anim-typewriter">Projetos en los cuales estas involucrado</p>
         <ol>
-          <li><a href="" target="_blank"> 🔢 Proyecto</a></li>
-          <li><a href="" target="_blank"> 💰 Proyecto</a></li>
-          <li><a href="" target="_blank"> 🔮 Proyecto</a></li>
-          <li><a href="" target="_blank"> 🎬 Proyecto</a></li>
-          <li><a href="" target="_blank"> 🏆 Proyecto</a></li>
-          <li><a href="" target="_blank"> 🃏 Proyecto</a></li>
+          <li><a href="" target="_blank"> 🆔 Proyecto</a></li>
+          <li><a href="" target="_blank"> 🆔 Proyecto</a></li>
+          <li><a href="" target="_blank"> 🆔 Proyecto</a></li>
+          <li><a href="" target="_blank"> 🆔 Proyecto</a></li>
+          <li><a href="" target="_blank"> 🆔 Proyecto</a></li>
+          <li><a href="" target="_blank"> 🆔 Proyecto</a></li>
           <li><a href="" target="_blank"> 🆔 Proyecto</a></li>
         </ol>
       </div>
