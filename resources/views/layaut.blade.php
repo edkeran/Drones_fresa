@@ -207,7 +207,7 @@
         }
 
         .text-copy:nth-child(2) {
-            stroke: #0a0a0a;
+            stroke: #9acd32	;
             animation-delay: -2s;
         }
 
@@ -222,7 +222,7 @@
         }
 
         .text-copy:nth-child(5) {
-            stroke: #0f0f0e;
+            stroke: #008080;
             animation-delay: -5s;
 
         }
@@ -321,7 +321,7 @@
 
 </head>
 
-<body>
+<body>  
     <div class="page-container">
         <div class="container">
             <div class="contentTitgulo">
