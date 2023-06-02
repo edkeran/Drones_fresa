@@ -1,17 +1,37 @@
 @extends('plataform')
 @section('pageCurrent')
+<link rel="stylesheet" href="stile6.css" type="text/css" media=screen>
 
-<h2>Cargar Imagenes A Procesar</h2>
-<div class="card" style="width: 80%">
+
+
+<div class="wrapper">
+<div class="card card--19">
+Subida de imagenes
+<div class="card__header card__header--19">
+
+<div class="card__watermark" >
+
+
+
     <form enctype="multipart/form-data" id="frmUploadImages" action="/fileUpload" method="post" >
-        <label style="border: 0px;" class="form-control" for="inpNombreImage">Nombre archivo:</label>
-        <input style="width: 60%;margin-left: 10px;" class="form-control" id="inpNombreImage" type="text" name="nombreImage">
-        <br>
+
+    <label  style="border: 0px;" class="form-control" for="inpNombreImage">Nombre archivo:</label>
+        <br> <input style="width: 90%;margin-left: 10px;" class="form-control" id="inpNombreImage" type="text" name="nombreImage">
+    
+        
         <input style="margin: 10px" type="file" multiple="true" onchange="showPreviewImage(this)" class="btn btn-secondary" name="imageFileStore[]">
-        @csrf
+       
         <br><br>
         <input style="margin: 10px"  type="submit" value="Enviar">
     </form>
 </div>
-<div id="previewImagesDiv"></div>
+
+</div>
+<div class="card__body">
+          <img src="https://www5.djicdn.com/cms/uploads/2808f1b40ded0555f0378af97cd59a45.png"  class="card__image">
+          <h1 class="card__title ">Vista Previa</h1>
+        </div>
+        <div id="previewImagesDiv"></div>
+      </div>
+      @csrf
 @endsection

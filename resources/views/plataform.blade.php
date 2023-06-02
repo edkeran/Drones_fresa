@@ -10,16 +10,7 @@
     <title>Plataforma</title>
 </head>
 <script src="fileUpload.js"></script>
-<style>
-   .l {
-  font-size: 100%;
-  font-weight: bold;
-  letter-spacing: 10px;
-  text-align: center;
-  text-shadow: rgb(171, 235, 198) 5px 0;
-  text-transform: uppercase;
-   }
-    </style>
+
 <body>
     <nav class="sidebar-navigation">
         <ul>
