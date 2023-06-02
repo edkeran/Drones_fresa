@@ -5,12 +5,24 @@
     font-family: "Lato", sans-serif;
     line-height: 1;
 }
-
-body {
-    background-color: #F5F6F8;
-    overflow: hidden;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+body {
+    background: var(--bg-color) no-repeat;
+    background-size: auto;
+    font-family: var(--font);
+    height: 100vh;
+  }
+  
+  :root {
+    
+    --bg-color: linear-gradient(120deg, #a8f1cd 0%, #d3fca5 100%);
+  
+  }
 .sidebar-navigation {
     
     min-height: 100vh;
