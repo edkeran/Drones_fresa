@@ -111,4 +111,66 @@ overflow-x: hidden;
     font-size: 16px;
     font-weight: 300;
   }
+ 
 
+  .zoom {
+    position: relative;
+    margin: 0%;
+    overflow: hidden;
+    width: 100%;
+    line-height: 0;
+    
+ 
+  }
+  .zoom img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+   
+ 
+  }
+  .zoom:hover img {
+    
+    transform: scale(5 , 3) translate( 50%, 50%);
+  }
+
+  #alfa {height: 405px; width: 750px;    overflow: hidden; 
+    position: relative; border-collapse: collapse; padding: 0; }
+    
+    #alfa div {position: absolute; width: 200px; height: 135px; 
+    border-collapse: collapse; padding: 0; }
+    
+    #previewImagesDiv {width: 942px; height: 866px; top: 0; left: 0; 
+        position: absolute; margin: 0; z-index: -1;  }
+    
+    #mk0 {top: 0; left: 0; cursor: nw-resize; } 
+    #mk1 {top: 0; left: 150px; cursor: n-resize; }
+    #mk2 {top: 0; left: 300px; cursor: ne-resize; } 
+    
+    #mk3 {top: 135px; left: 0; cursor: w-resize; }
+    #mk4 {top: 135px; left: 150px; cursor: all-scroll; } 
+    #mk5 {top: 135px; left: 300px; cursor: e-resize; }
+    #mk6 {top: 270px; left: 0; cursor: sw-resize; } 
+    #mk7 {top: 270px; left: 150px; cursor: s-resize; } 
+    #mk8 {top: 270px; left: 300px; cursor: se-resize; } 
+    
+    #mk0:hover ~ #previewImagesDiv {top: 0; left: -200; 
+    transition: top 1s ease-out, left 1s ease-out; } 
+    #mk1:hover ~ #previewImagesDiv {top: 0; left: -200px; 
+    transition: top 1s ease-out, left 1s ease-out; } 
+    #mk2:hover ~ #previewImagesDiv {top: 0; left: -500px; 
+    transition: top 1s ease-out, left 1s ease-out; } 
+    #mk3:hover ~ #previewImagesDiv {top: -199px; left: 0; 
+    transition: top 1s ease-out, left 1s ease-out; } 
+    #mk4:hover ~ #previewImagesDiv {top: -199px; left: -200px; 
+    transition: top 1s ease-out, left 1s ease-out; } 
+    #mk5:hover ~ #previewImagesDiv {top: -199px; left: -500px; 
+    transition: top 1s ease-out, left 1s ease-out; } 
+    #mk6:hover ~ #previewImagesDiv {top: -460px; left: 0; 
+    transition: top 1s ease-out, left 1s ease-out; } 
+    #mk7:hover ~ #previewImagesDiv {top: -460px; left: -200px; 
+    transition: top 1s ease-out, left 1s ease-out; } 
+    #mk8:hover ~ #previewImagesDiv {top: -460px; left: -500px; 
+    transition: top 1s ease-out, left 1s ease-out; } 
+    
