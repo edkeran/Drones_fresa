@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  .filter-name {
+    background: #795548;
+    padding: 2px;
+    display: inline-block;
+    color: white;
+    width: 100px;
+    border-radius: 3px;
+    text-align: center;
+  }
+  
+  .filter-group {
+    display: inline-block;
+    margin: 5px 15px;
+  }
+  
+  body {
+    text-align: center;
+    margin: 20px auto;
+    font-family: "Lato";
+  }
+  
+  h1 {
+    margin: 10px 0 0 0;
+    font-size: 2em;
+  }
+  
+  canvas {
+    margin-bottom: 40px;
+    background: #ececec;
+    width: 600px;
+    max-width: 100%;
+  }
+  
+  .filter-buttons button,
+  .editor-buttons button {
+    margin: 4px;
+    background: black;
+    border: none;
+    color: white;
+    font-family: "Lato";
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .filter-buttons button.disabled {
+    background: #aaa;
+  }
+  
+  .filter-buttons button {
+    padding: 2px 10px;
+    margin: 0;
+    cursor: pointer;
+    background: #ff5722;
+  }
+  
+  .editor-buttons #reset-btn {
+    background: #f44336;
+  }
+  
+  .editor-buttons #download-btn {
+    background: #009688;
+  }
+  
+  .editor-buttons button:hover {
+    background: #795548;
+    cursor: pointer;
+  }
+  
+  .editor-buttons {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  [type="file"] {
+    display: none;
+  }
+  
+  [type="file"] + label {
+    margin: 10px 4px;
+    background: #673ab7;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: "Lato";
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  
+  [type="file"] + label:hover {
+    background: #3399ff;
+  }
+  

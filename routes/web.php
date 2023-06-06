@@ -30,6 +30,7 @@ Route::view('eventos', 'eventos')->name('eventos');
 Route::post('/registrarUsuario', [UsuarioController::class, 'crearUsuario']);
 Route::post('/ingresarUsuario', [UsuarioController::class,'loginUsuario']);
 Route::view('/analisisConsultor', 'lstAnalisisCampesino')->middleware('auth'); 
+Route::view('editor', 'editor')->name('editor');
 //Rutas para validar el correo del usuario 
 Route::get('/verify-email', function () {
     return view('auth.verify-email');
