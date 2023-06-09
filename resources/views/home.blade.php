@@ -46,8 +46,7 @@
       </h1>
       
       <p>
-       semillero de estudiantes de la universidad cun embed&nbsp;method. 
-      </p>
+       semillero de estudiantes de la universidad cun
       
       <h2>
         Videos
