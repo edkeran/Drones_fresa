@@ -4,10 +4,10 @@
 
 
 
-<div class="wrapper">
-<div class="card card--19">
+
+<div class="card card--1">
 Subida de imagenes
-<div class="card__header card__header--19">
+<div class="card__header card__header--1">
 
 <div class="card__watermark" >
 
