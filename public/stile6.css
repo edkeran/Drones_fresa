@@ -98,7 +98,7 @@ overflow-x: hidden;
   top: -430px;
   left: -150px;
   width: 80%;
-
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
