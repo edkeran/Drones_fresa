@@ -17,7 +17,7 @@
     >
       <img 
         class="video-banner-img" 
-        src="https://i.ibb.co/QQfdGQc/Glitch-Text-Effect.png" 
+        src="https://i.ibb.co/QfSXMgY/Glitch-Text-Effect.png" 
         alt="" 
       />
       

@@ -11,9 +11,7 @@
 }
 
 
-main {
-  font-size: 0;
-}
+
 main .column.left,
 main .column.right {
   background: #fcfcfc;
@@ -35,7 +33,7 @@ main .column.right {
       position: fixed;  
     }
     main .column.right {
-      margin-left: 50%;
+      margin-left: 60%;
     }
 }
 
@@ -121,8 +119,7 @@ main .column.right {
   display: block;
   min-height: 100vh;
   max-width: 40rem;
-  margin: 2.5rem auto;
-  padding: 1.5rem;
+ 
 }
 @media (min-width: 641px) {
   .content {
