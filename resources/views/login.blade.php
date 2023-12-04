@@ -14,11 +14,12 @@
      <input type="password" name="password" required="">
      <label>Contraseña:</label>
 </div>
-            @csrf
+            
           
    
       
       <input type="submit" value="Ingresar" class="btn-green">
         </div>
     </form>
+    @csrf
 @endsection
