@@ -5,16 +5,16 @@
     width: 400px;
     padding: 40px;
     transform: translate(-100%, 10%);
-    background: rgba(53, 85, 55, 0.5);
+    background: rgba(196, 247, 199, 0.5);
     box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    border-radius: 10px;
+    box-shadow: 0 15px 50px rgba(0,0,0,.6);
+    border-radius: 60px;
   }
   
   .login-box h2 {
     margin: 0 0 30px;
     padding: 0;
-    color: #fff;
+    color: #1a0f0f;
     text-align: center;
   }
   
@@ -26,10 +26,10 @@
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: #fff;
+    color: #383030;
     margin-bottom: 30px;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000000;
     outline: none;
     background: transparent;
   }
@@ -39,7 +39,7 @@
     left: 0;
     padding: 10px 0;
     font-size: 16px;
-    color: #fff;
+    color: #1d1b1b;
     pointer-events: none;
     transition: .5s;
   }
@@ -48,7 +48,7 @@
   .login-box .user-box input:valid ~ label {
     top: -20px;
     left: 0;
-    color: #03f417;
+    color: #2f352f;
     font-size: 12px;
   }  
   

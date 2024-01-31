@@ -26,9 +26,9 @@ input{
 }
 
 .btn-green{
-    border-radius: 10px!important;
+    border-radius: 20px!important;
     color: white;
-    background-color: #4EB909;
+    background-color: #cfebbd;
     font-size: 20px;
 }
 

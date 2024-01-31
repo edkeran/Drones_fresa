@@ -21,9 +21,7 @@
         alt="" 
       />
       
-      <span class="video-banner-headline">
-        Ponencia
-      </span>
+    
       
      
      
